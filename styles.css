@@ -1,0 +1,226 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #f8f8f8;
+}
+
+/* Seccion de intro */
+.intropaula h1 { 
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #ecd6c7;
+    padding: 0.8em;
+}
+
+.flores-secas {
+    position: relative; 
+    text-align: center; 
+    background-color: #ffffff; 
+    padding: 0; 
+}
+
+.flores-secas img {
+    width: 100%; 
+    height: 400px; /* Ajusta la altura de la imagen */
+    display: block; 
+    margin: 0; 
+}
+
+.flores-secas h1 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; /* Corrige la barra extra */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: #ffffff;
+    font-size: 4em; 
+    font-weight: bold;
+    font-family: 'Goudy Old Style', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra para mejorar la visibilidad */
+}
+
+
+/* Encabezado */
+header {
+    background-color: #a24f62; 
+    padding: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.3em;
+    margin-top: 0.5em;
+    color: #ffffff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sección de introducción */
+.intro {
+    text-align: center;
+    padding: 2em;
+    background-color: #a24f62;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 1.0em;
+}
+
+/* Sección de galería */
+.gallery {
+    text-align: center;
+    padding: 2em;
+    background-color: #f7ede2;
+}
+
+.gallery h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 1em;
+}
+
+
+
+/* Sección de revista */
+.revista {
+    background-color: #ffffff;
+    padding: 2em;
+    text-align: center;
+}
+
+.revista h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.revista p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    font-size: 1.0em;
+}
+
+/* Contenedor de imágenes y texto */
+.revista-container {
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 1em; /* Espacio entre las imágenes y el texto */
+    flex-wrap: wrap; /* Hace que se ajusten si la pantalla es más pequeña */
+}
+
+/* Estilo para las imágenes */
+.revista-container img {
+    width: 20%; /* Controla el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 0; /* Elimina márgenes */
+    border-radius: 0; /* Elimina los bordes redondeados */
+
+}
+
+/* Estilo para el contenedor del texto */
+.revista-text {
+    max-width: 30%; /* Limita el ancho del texto */
+    text-align: center;
+}
+
+/* En caso de que desees que el texto sea más grande en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .revista-container {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .revista-container img {
+        width: 80%; /* Las imágenes serán más grandes en pantallas pequeñas */
+    }
+
+    .revista-text {
+        max-width: 50%;
+    }
+}
+
+
+
+/* Contenedor de las imágenes */
+.revista-images {
+    display: flex;
+    justify-content: space-between; /* Alinea las imágenes a los márgenes */
+    margin-top: 2em; /* Espacio encima de las imágenes */
+}
+
+/* Estilo para las imágenes */
+.revista-images img {
+    width: 45%; /* Limita el ancho de las imágenes para que se ajusten bien a los márgenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 8px; /* Bordes redondeados si deseas */
+}
+
+/* Si deseas que las imágenes estén alineadas al borde de la sección */
+.revista-images .revpaula1 {
+    align-self: flex-start; /* Alinea la imagen izquierda */
+}
+
+.revista-images .revpaula2 {
+    align-self: flex-end; /* Alinea la imagen derecha */
+}
+
+/* Pie de página */
+footer {
+    background-color: #194912;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
+
+.underline {
+    text-decoration: underline;
+}
