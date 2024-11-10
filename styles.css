@@ -1,222 +1,165 @@
-/* Estilos generales */
-* {
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-weight: 300;
-    line-height: 1.6;
-    color: #ffffff;
-    background-color: #f8f8f8;
-}
-
-/* Encabezado */
-header {
-    background-color: #a24f62;
-    padding: 1em;
+/* Header y Navegación */
+.header-container {
     text-align: center;
-    color: #ffffff;
+    padding: 0em;
+    background-color: #ffffff;
 }
 
-header h1 {
-    font-size: 2em;
-}
-
-/* Menú de navegación */
-nav ul {
+header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.3em;
-    margin-top: 0.5em;
+    gap: 2em;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 400;
+header nav ul li {
+    position: center;
 }
 
-nav ul li a:hover {
-    color: #f8f8f8; /* Aseguramos el color correcto al hacer hover */
-}
-
-/* Estilo de categorías y submenús */
-.categoria {
-    position: relative;
-}
-
-.submenu {
+header nav ul li .submenu {
     display: none;
-    position: absolute;
+    position: center;
     top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    padding: 10px;
-    width: 150px;
-    z-index: 1;
+    background-color: #f4c2c2;
+    padding: 1em;
 }
 
-.categoria:hover .submenu {
+header nav ul li:hover .submenu {
     display: block;
 }
 
-.submenu p {
-    margin: 5px 0;
-    padding: 5px;
-    color: #333;
-}
-
-.submenu p:hover {
-    background-color: #eee;
-}
-
-/* Sección de introducción */
-.intro {
+/* Sección Flores Secas */
+.flores-secas {
+    background-image: url('fondo-flores-secas.jpg');
+    background-size: cover;
+    color: white;
     text-align: center;
-    padding: 2em;
-    background-color: #a24f62;
+    padding: 10em 0;
 }
 
-.intro h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    color: #000000;
+.flores-secas h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
-.intro p {
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-    font-size: 1em;
-}
-
-/* Galería */
-.gallery {
-    text-align: center;
-    padding: 2em;
-    background-color: #f7ede2;
-}
-
-.gallery h2 {
-    font-size: 1.5em;
-    color: #000000;
-    margin-bottom: 1em;
-}
-
-.gallery-images {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
-.gallery-images img {
-    width: 20%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Estilos de revista */
+/* Sección Revista */
 .revista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #ffffff;
-    padding: 2em;
-    text-align: center;
+    padding: 5em 0;
 }
 
-.revista h2 {
-    font-size: 1.5em;
-    color: #000000;
-    margin-bottom: 1em;
-    font-weight: 400;
-}
-
-.revista p {
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-    font-weight: 300;
-    color: #000000;
-    font-size: 1em;
-}
-
-/* Contenedor de imágenes y texto en revista */
 .revista-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
-.revista-container img {
-    width: 20%;
-    height: auto;
+    max-width: 1000px;
 }
 
 .revista-text {
-    max-width: 30%;
+    margin: 0 2em;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal
+}
+
+.revista img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Sección Intro */
+.intro {
+    padding: 4em;
+    text-align: center;
+    background-color: #a24f62;
+    color: #ffffff;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 2em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.content-wrapper {
+    max-width: 2000px;
+    padding: 5em;
+    text-align: center; /* Opcional para centrar el texto */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+.gallery {
+    padding: 2em; /* Añade espacio alrededor de toda la sección de la galería */
     text-align: center;
 }
 
-/* Pie de página */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em; /* Espacio entre las imágenes */
+    margin-top: 1em; /* Añade espacio entre el título y las imágenes */
+    padding: 1em; /* Añade espacio entre el borde de .gallery y las imágenes */
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 0px; /* Opcional: añade bordes redondeados a las imágenes */
+}
+
 footer {
-    background-color: #194912;
-    color: #fff;
+    background-color: #0c491d; /* Color de fondo */
+    color: #fff; /* Color de texto */
     text-align: center;
-    padding: 1em 0;
+    padding: 1.5em 0; /* Añade espacio arriba y abajo */
     font-size: 0.9em;
 }
 
-/* Media Queries para dispositivos pequeños */
-@media (max-width: 768px) {
-    .revista-container img {
-        width: 80%;
-    }
-    .revista-text {
-        max-width: 50%;
-    }
+.aprender {
+    display: flex;
+    justify-content: center;
+    background-color: #a24f62; /* Color de fondo */
+    padding: 5em 0; /* Espacio vertical */
 }
 
-@media (max-width: 480px) {
-    header {
-        font-size: 1em;
-    }
-    .revista-container img {
-        width: 100%;
-    }
-}
-
-/* Barra de búsqueda */
-.search-bar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.aprender-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+    max-width: 1000px; /* Ancho máximo */
+    gap: 2em; /* Espacio entre elementos */
 }
 
-.search-bar input[type="text"] {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #DB8F9B;
-    border-radius: 4px 0 0 4px;
-    outline: none;
+.aprender-text {
+    margin: 0 2em;
+    font-family: "Poppins", sans-serif; /* Cambia a sans-serif para Poppins */
+    font-weight: 300;
+    font-style: normal;
+    text-align: center; /* Centra el texto */
+    color: #ffffff;
 }
 
-.search-bar button {
-    padding: 8px 16px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #DB8F9B;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-}
-
-.search-bar button:hover {
-    background-color: #555;
+.aprender img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
 }
