@@ -1,0 +1,230 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:#E2EAF4;
+}
+
+/* Título principal */
+.intropaula h1 {
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #ecd6c7;
+    padding: 0.8em;
+}
+
+/* Navegación */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.0em;
+    padding: 0.7em 0;
+    background-color: #a24f62;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0.4em 0.7em;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #d06c84;
+    border-radius: 5px;
+}
+
+/* Contenedor de arreglos secos */
+.arreglos-secos-container {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:#E2EAF4;
+}
+
+/* Título de la sección */
+.arreglos-secos-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.0em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+/* Contenedor de las categorías */
+.arreglos-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+/* Estilo de cada categoría */
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    float: center;
+}
+
+/* Estilo para las imágenes dentro de las categorías */
+.categoria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    float: center;
+    display: flex;
+}
+
+/* Al pasar el cursor sobre la imagen */
+.categoria img:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+/* Estilo para los títulos de las categorías */
+.categoria h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #a24f62;
+    margin-top: 0.5em;
+}
+
+
+.enlace {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del h1 */
+}
+
+
+.intropaula h1 {
+    font-size: 20px;
+    color: black;
+    transition: color 0.3s ease;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.intropaula h1:hover {
+    color: #a24f62;
+}
+
+
+
+
+* Contenedor de encabezado */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+/* Posición de la barra de búsqueda en la esquina superior derecha */
+.search-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo de la barra de búsqueda */
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #DB8F9B;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #DB8F9B;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+
+/* Estilos generales para dispositivos grandes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Para pantallas más pequeñas (tabletas y móviles en modo vertical) */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+    header {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Para pantallas muy pequeñas (móviles en modo horizontal) */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+    }
+    header {
+      font-size: 1em;
+    }
+  }
+
+
+  /* Ejemplo usando Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    flex: 1 1 30%; /* Los elementos tomarán un 30% del ancho en pantallas grandes */
+    margin: 10px;
+  }
+  
+  /* Para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .item {
+      flex: 1 1 45%; /* Los elementos ocuparán el 45% en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+      flex: 1 1 100%; /* Los elementos ocuparán todo el ancho en pantallas pequeñas */
+    }
+  }

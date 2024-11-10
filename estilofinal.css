@@ -1,0 +1,761 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #f8f8f8;
+}
+
+/* Estilo del menú y submenús */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.3em;
+    margin-top: 0.5em;
+    color: #ffffff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Estilo para las categorías y submenús */
+.categoria {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 150px;
+    z-index: 1;
+}
+
+.categoria:hover .submenu {
+    display: block;
+}
+
+.submenu p {
+    margin: 5px 0;
+    padding: 5px;
+    color: #333;
+}
+
+.submenu p:hover {
+    background-color: #eee;
+}
+
+/* Otros estilos de encabezado */
+header {
+    background-color: #a24f62; 
+    padding: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/* Estilos adicionales de tus secciones */
+.intropaula h1 {
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #ecd6c7;
+    padding: 0.8em;
+}
+
+
+
+
+#link-arreglo {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglo:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-flores {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-flores:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arregloarrimo {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arregloarrimo:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglofrutasflores {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglofrutasflores:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-caja {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-apr {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-vela {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-vela {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#imagen-proceso {
+    width: auto; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    max-width: 500px; /* Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+}
+
+#titulo-topiary {
+    font-size: 2em; /* Tamaño de fuente */
+    color: #a24f62; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 700; /* Peso de la fuente */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+}
+
+.texto1{
+    font-size: 0.8em; /* Tamaño de fuente */
+    color: #000000; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 500; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 800px;
+}
+
+
+.texto2{
+    font-size: 0.6em; /* Tamaño de fuente */
+    color: #000000; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 400; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 800px;
+}
+
+.materiales{
+    font-size: 0.6em; /* Tamaño de fuente */
+    color: #000000; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 400; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 800px;
+
+}
+
+.procedimiento{
+    font-size: 0.6em; /* Tamaño de fuente */
+    color: #000000; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 400; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 400px;
+    margin-right: 800px;
+}
+
+.materialesh2{
+    font-size: 1.0em; /* Tamaño de fuente */
+    color: #a24f62; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 500; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 800px;
+
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #f8f8f8;
+}
+
+/* Estilo del menú y submenús */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.3em;
+    margin-top: 0.5em;
+    color: #ffffff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Estilo para las categorías y submenús */
+.categoria {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 150px;
+    z-index: 1;
+}
+
+.categoria:hover .submenu {
+    display: block;
+}
+
+.submenu p {
+    margin: 5px 0;
+    padding: 5px;
+    color: #333;
+}
+
+.submenu p:hover {
+    background-color: #eee;
+}
+
+/* Otros estilos de encabezado */
+header {
+    background-color: #a24f62; 
+    padding: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/* Estilos adicionales de tus secciones */
+.intropaula h1 {
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #ecd6c7;
+    padding: 0.8em;
+}
+
+
+
+
+#link-arreglo {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglo:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-flores {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-flores:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arregloarrimo {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arregloarrimo:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglofrutasflores {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglofrutasflores:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-caja {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-apr {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-vela {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-vela {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#imagen-proceso {
+    width: auto; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    max-width: 500px; /* Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+}
+
+
+
+.texto1{
+    font-size: 0.8em; /* Tamaño de fuente */
+    color: #000000; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 500; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 800px;
+}
+
+
+.texto2{
+    font-size: 0.6em; /* Tamaño de fuente */
+    color: #000000; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 400; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 800px;
+}
+
+.materiales{
+    font-size: 0.6em; /* Tamaño de fuente */
+    color: #000000; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 400; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 800px;
+
+}
+
+.procedimiento{
+    font-size: 0.6em; /* Tamaño de fuente */
+    color: #000000; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 400; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 400px;
+    margin-right: 800px;
+}
+
+.materialesh2{
+    font-size: 1.0em; /* Tamaño de fuente */
+    color: #a24f62; /* Color de texto */
+    text-align: left; /* Centrar el texto */
+    font-family: 'Poppins', sans-serif; /* Familia de fuente */
+    font-weight: 500; /* Peso de la fuente */
+    display: flex; /* Para alinear las imágenes en una fila */
+    margin-right: 800px;
+
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Sección de imágenes */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección de texto */
+.text-container {
+    max-width: 50%;
+    color: #333;
+}
+
+
+/* Estilo del título */
+.text-container h1 {
+    color: #a24f62;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+}
+
+
+
+/* Estilo de los subtítulos */
+.text-container h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+/* Estilo del contenido */
+.text-container p, .text-container ul {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+
+}
+
+.text-container ul {
+    list-style: disc;
+    padding-left: 50px;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.procedimiento {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+* Contenedor de encabezado */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+/* Posición de la barra de búsqueda en la esquina superior derecha */
+.search-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo de la barra de búsqueda */
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #DB8F9B;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #DB8F9B;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+/* Estilos para la tercera parte de la web */
+.feature-section {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    margin-left: 50px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: 50px;
+    align-items: right;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 5px;
+    margin-left: 10px;
+  
+}
+
+.feature-text {
+    max-width: 50%;
+    padding-right: 20px;
+    padding-left: 5%;
+    text-align: left;
+    margin-left: 10px;
+    line-height: 1.0;
+}
+
+.feature-text h1 {
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #a24f62;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.feature-text h2 {
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #83C5BE;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.feature-text h3 {
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 1.0rem;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    line-height: 1.0;
+}
+
+.feature-text p {
+    font-family: 'Poppins', serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-bottom: 5%;
+    margin-left: 10px;
+}
+
+.button_tres {
+    padding-top: 5%;
+    margin-left: 10px;
+}
+
+.feature-button {
+    background-color: #83C5BE;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.feature-button:hover {
+    background-color: #83C5BE;
+}
+
+.feature-image {
+    max-width: auto;
+    max-height: 75%;
+    text-align: right;
+   
+    
+}
+
+.feature-image img {
+    border-radius: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 5px;
+
+}
+
+
+.enlace {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del h1 */
+}
+.intropaula h1:hover {
+    color: #a24f62;
+}
+
+
+
+/* Estilos generales para dispositivos grandes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Para pantallas más pequeñas (tabletas y móviles en modo vertical) */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+    header {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Para pantallas muy pequeñas (móviles en modo horizontal) */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+    }
+    header {
+      font-size: 1em;
+    }
+  }
+
+  /* Ejemplo usando Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    flex: 1 1 30%; /* Los elementos tomarán un 30% del ancho en pantallas grandes */
+    margin: 10px;
+  }
+  
+  /* Para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .item {
+      flex: 1 1 45%; /* Los elementos ocuparán el 45% en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+      flex: 1 1 100%; /* Los elementos ocuparán todo el ancho en pantallas pequeñas */
+    }
+  }

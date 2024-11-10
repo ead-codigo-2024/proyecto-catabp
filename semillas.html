@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores secas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="itemstyles.css">
+</head>
+<body>
+    <div class="header-container">
+        <!-- Barra de búsqueda -->
+        <form action="#" method="get" class="search-bar">
+            <input type="text" placeholder="Buscar..." name="search" />
+            <button type="submit">Buscar</button>
+        </form>
+    <!-- Título principal con enlace -->
+    <section class="intropaula">
+        
+        <a href="inicio.html" onclick="volverAlInicio()" class="enlace">
+            <h1>PRÁCTICA de Paula</h1>
+        </a>
+    </section>
+
+    <!-- Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="arreglos-secos.html">Arreglos secos</a></li>
+                <li><a href="semillas.html" class="active">Semillas</a></li>
+                <li><a href="velas.html">Velas</a></li>
+                <li><a href="prensado.html">Prensado</a></li>
+                <li><a href="tecnicas.html">Técnicas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+       <!-- Sección de semillas -->
+       <section class="arreglos-secos">
+        <div class="arreglos-secos-container">
+            <h1 class="arreglos-secos-title">Semillas</h1>
+            <div class="arreglos-categorias">
+                <div class="categoria">
+                    <a href="caja-rellena.html" id="link-flores">
+                        <img id="imagen-flores" src="semillas01.jpg" alt="Imagen de flores">
+                        <h2>Caja rellena</h2>
+                    </a>
+                </div>
+                <div class="categoria">
+                    <a href="arreglo-petalos-rosas.html" id="link-frutas">
+                        <img id="imagen-frutas" src="semillas-arreglo.jpeg" alt="Imagen de frutas">
+                        <h2>Arreglo de pétalos y rosas</h2>
+                    </a>
+                </div>
+           
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

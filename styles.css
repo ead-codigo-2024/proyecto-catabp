@@ -15,8 +15,65 @@ body {
     background-color: #f8f8f8;
 }
 
-/* Seccion de intro */
-.intropaula h1 { 
+/* Estilo del menú y submenús */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.3em;
+    margin-top: 0.5em;
+    color: #ffffff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Estilo para las categorías y submenús */
+.categoria {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 150px;
+    z-index: 1;
+}
+
+.categoria:hover .submenu {
+    display: block;
+}
+
+.submenu p {
+    margin: 5px 0;
+    padding: 5px;
+    color: #333;
+}
+
+.submenu p:hover {
+    background-color: #eee;
+}
+
+/* Otros estilos de encabezado */
+header {
+    background-color: #a24f62; 
+    padding: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/* Estilos adicionales de tus secciones */
+.intropaula h1 {
     font-family: 'Futura PT', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
@@ -24,6 +81,7 @@ body {
     background-color: #ecd6c7;
     padding: 0.8em;
 }
+
 
 .flores-secas {
     position: relative; 
@@ -47,7 +105,9 @@ body {
     color: #ffffff;
     font-size: 4em; 
     font-weight: bold;
-    font-family: 'Goudy Old Style', sans-serif;
+    font-family: "goudy-old-style", serif;
+    font-weight: 700;
+    font-style: normal;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra para mejorar la visibilidad */
 }
 
@@ -224,3 +284,242 @@ footer {
 .underline {
     text-decoration: underline;
 }
+
+
+
+.gallery {
+    text-align: center;
+    padding: 2em;
+    background-color: #f7ede2;
+}
+
+.gallery h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 1em;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 1em; /* Espacio entre las imágenes */
+}
+
+.gallery-images img {
+    width: 20%; /* Controla el tamaño de cada imagen */
+    height: auto; /* Ajusta la altura de cada imagen */
+    object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsión */
+    border-radius: 0px; /* Bordes redondeados opcionales */
+}
+
+
+
+
+.arreglos-secos-container {
+    margin-top: 1em;
+    background-color: #f8f8f8; /* Fondo opcional */
+    padding: 1em;
+}
+
+.arreglos-secos-title {
+    font-size: 1.5em;
+    color: #000000;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+#link-arreglo {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglo:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-flores {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-flores:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arregloarrimo {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arregloarrimo:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglofrutasflores {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-arreglofrutasflores:hover {
+    color: #555555; /* Color al pasar el cursor, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-caja {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-apr {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-vela {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#link-vela {
+    color: #a24f62; /* Cambia a cualquier color que desees */
+    text-decoration: none; /* Elimina el subrayado, opcional */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+
+* Contenedor de encabezado */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+/* Posición de la barra de búsqueda en la esquina superior derecha */
+.search-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo de la barra de búsqueda */
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #DB8F9B;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #DB8F9B;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+.metodo-secado h1 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; /* Corrige la barra extra */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: #ffffff;
+    font-size: 4em; 
+    font-weight: bold;
+    font-family: "goudy-old-style", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra para mejorar la visibilidad */
+}
+
+
+/* Estilos generales para dispositivos grandes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Para pantallas más pequeñas (tabletas y móviles en modo vertical) */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+    header {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Para pantallas muy pequeñas (móviles en modo horizontal) */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+    }
+    header {
+      font-size: 1em;
+    }
+  }
+
+  /* Ejemplo usando Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    flex: 1 1 30%; /* Los elementos tomarán un 30% del ancho en pantallas grandes */
+    margin: 10px;
+  }
+  
+  /* Para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .item {
+      flex: 1 1 45%; /* Los elementos ocuparán el 45% en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+      flex: 1 1 100%; /* Los elementos ocuparán todo el ancho en pantallas pequeñas */
+    }
+  }
